@@ -1,0 +1,249 @@
+data points_AL 17824
+Training Epoch [10/10], Training Loss: 0.8103, Training Accuracy: 0.8078
+Validation Loss: 0.8219, Validation Accuracy: 0.8037
+Model saved to 50_clients_data/clients_fair_trained_model/AL.pth
+
+data points_AK 2848
+Training Epoch [10/10], Training Loss: 0.8587, Training Accuracy: 0.7948
+Validation Loss: 0.8838, Validation Accuracy: 0.7757
+Model saved to 50_clients_data/clients_fair_trained_model/AK.pth
+
+data points_AZ 26624
+Training Epoch [10/10], Training Loss: 0.8229, Training Accuracy: 0.8040
+Validation Loss: 0.8389, Validation Accuracy: 0.8044
+Model saved to 50_clients_data/clients_fair_trained_model/AZ.pth
+
+data points_AR 11168
+Training Epoch [10/10], Training Loss: 0.7921, Training Accuracy: 0.8122
+Validation Loss: 0.8747, Validation Accuracy: 0.8108
+Model saved to 50_clients_data/clients_fair_trained_model/AR.pth
+
+data points_CA 156544
+Training Epoch [10/10], Training Loss: 0.8114, Training Accuracy: 0.8106
+Validation Loss: 0.8165, Validation Accuracy: 0.8114
+Model saved to 50_clients_data/clients_fair_trained_model/CA.pth
+
+data points_CO 25056
+Training Epoch [10/10], Training Loss: 0.8907, Training Accuracy: 0.7797
+Validation Loss: 0.9047, Validation Accuracy: 0.7772
+Model saved to 50_clients_data/clients_fair_trained_model/CO.pth
+
+data points_CT 15840
+Training Epoch [10/10], Training Loss: 0.8298, Training Accuracy: 0.8034
+Validation Loss: 0.8561, Validation Accuracy: 0.7965
+Model saved to 50_clients_data/clients_fair_trained_model/CT.pth
+
+data points_DE 3776
+Training Epoch [10/10], Training Loss: 0.8505, Training Accuracy: 0.7981
+Validation Loss: 0.9233, Validation Accuracy: 0.7803
+Model saved to 50_clients_data/clients_fair_trained_model/DE.pth
+
+data points_FL 79168
+Training Epoch [10/10], Training Loss: 0.8380, Training Accuracy: 0.8002
+Validation Loss: 0.8746, Validation Accuracy: 0.7882
+Model saved to 50_clients_data/clients_fair_trained_model/FL.pth
+
+data points_GA 40736
+Training Epoch [10/10], Training Loss: 0.8212, Training Accuracy: 0.8055
+Validation Loss: 0.8257, Validation Accuracy: 0.8049
+Model saved to 50_clients_data/clients_fair_trained_model/GA.pth
+
+data points_HI 6208
+Training Epoch [10/10], Training Loss: 0.9067, Training Accuracy: 0.7799
+Validation Loss: 0.9675, Validation Accuracy: 0.7671
+Model saved to 50_clients_data/clients_fair_trained_model/HI.pth
+
+data points_ID 6624
+Training Epoch [10/10], Training Loss: 0.8065, Training Accuracy: 0.8060
+Validation Loss: 0.8399, Validation Accuracy: 0.7972
+Model saved to 50_clients_data/clients_fair_trained_model/ID.pth
+
+data points_IL 53632
+Training Epoch [10/10], Training Loss: 0.8455, Training Accuracy: 0.7961
+Validation Loss: 0.8723, Validation Accuracy: 0.7860
+Model saved to 50_clients_data/clients_fair_trained_model/IL.pth
+
+data points_IN 28032
+Training Epoch [10/10], Training Loss: 0.8142, Training Accuracy: 0.8024
+Validation Loss: 0.8232, Validation Accuracy: 0.8055
+Model saved to 50_clients_data/clients_fair_trained_model/IN.pth
+
+data points_IA 14208
+Training Epoch [10/10], Training Loss: 0.8339, Training Accuracy: 0.7980
+Validation Loss: 0.8570, Validation Accuracy: 0.7940
+Model saved to 50_clients_data/clients_fair_trained_model/IA.pth
+
+data points_KS 12672
+Training Epoch [10/10], Training Loss: 0.8140, Training Accuracy: 0.8022
+Validation Loss: 0.8669, Validation Accuracy: 0.7817
+Model saved to 50_clients_data/clients_fair_trained_model/KS.pth
+
+data points_KY 17632
+Training Epoch [10/10], Training Loss: 0.8193, Training Accuracy: 0.8032
+Validation Loss: 0.8410, Validation Accuracy: 0.8055
+Model saved to 50_clients_data/clients_fair_trained_model/KY.pth
+
+data points_LA 16544
+Training Epoch [10/10], Training Loss: 0.8447, Training Accuracy: 0.7923
+Validation Loss: 0.8912, Validation Accuracy: 0.7847
+Model saved to 50_clients_data/clients_fair_trained_model/LA.pth
+
+data points_ME 5632
+Training Epoch [10/10], Training Loss: 0.8412, Training Accuracy: 0.7918
+Validation Loss: 0.8584, Validation Accuracy: 0.7871
+Model saved to 50_clients_data/clients_fair_trained_model/ME.pth
+
+data points_MD 26464
+Training Epoch [10/10], Training Loss: 0.8169, Training Accuracy: 0.8062
+Validation Loss: 0.8661, Validation Accuracy: 0.7887
+Model saved to 50_clients_data/clients_fair_trained_model/MD.pth
+
+data points_MA 32096
+Training Epoch [10/10], Training Loss: 0.8222, Training Accuracy: 0.8056
+Validation Loss: 0.8487, Validation Accuracy: 0.7962
+Model saved to 50_clients_data/clients_fair_trained_model/MA.pth
+
+data points_MI 40032
+Training Epoch [10/10], Training Loss: 0.8176, Training Accuracy: 0.8055
+Validation Loss: 0.8253, Validation Accuracy: 0.8034
+Model saved to 50_clients_data/clients_fair_trained_model/MI.pth
+
+data points_MN 24832
+Training Epoch [10/10], Training Loss: 0.8882, Training Accuracy: 0.7831
+Validation Loss: 0.8975, Validation Accuracy: 0.7772
+Model saved to 50_clients_data/clients_fair_trained_model/MN.pth
+
+data points_MS 10560
+Training Epoch [10/10], Training Loss: 0.7868, Training Accuracy: 0.8161
+Validation Loss: 0.8755, Validation Accuracy: 0.7911
+Model saved to 50_clients_data/clients_fair_trained_model/MS.pth
+
+data points_MO 25344
+Training Epoch [10/10], Training Loss: 0.8242, Training Accuracy: 0.8005
+Validation Loss: 0.8399, Validation Accuracy: 0.7961
+Model saved to 50_clients_data/clients_fair_trained_model/MO.pth
+
+data points_MT 4384
+Training Epoch [10/10], Training Loss: 0.8737, Training Accuracy: 0.7815
+Validation Loss: 0.9486, Validation Accuracy: 0.7582
+Model saved to 50_clients_data/clients_fair_trained_model/MT.pth
+
+data points_NE 8640
+Training Epoch [10/10], Training Loss: 0.8511, Training Accuracy: 0.7904
+Validation Loss: 0.9233, Validation Accuracy: 0.7639
+Model saved to 50_clients_data/clients_fair_trained_model/NE.pth
+
+data points_NV 11872
+Training Epoch [10/10], Training Loss: 0.8763, Training Accuracy: 0.7899
+Validation Loss: 0.9034, Validation Accuracy: 0.7859
+Model saved to 50_clients_data/clients_fair_trained_model/NV.pth
+
+data points_NH 6400
+Training Epoch [10/10], Training Loss: 0.8649, Training Accuracy: 0.7867
+Validation Loss: 0.8461, Validation Accuracy: 0.7991
+Model saved to 50_clients_data/clients_fair_trained_model/NH.pth
+
+data points_NJ 38240
+Training Epoch [10/10], Training Loss: 0.8458, Training Accuracy: 0.7995
+Validation Loss: 0.8353, Validation Accuracy: 0.8045
+Model saved to 50_clients_data/clients_fair_trained_model/NJ.pth
+
+data points_NM 6976
+Training Epoch [10/10], Training Loss: 0.7976, Training Accuracy: 0.8156
+Validation Loss: 0.8108, Validation Accuracy: 0.8065
+Model saved to 50_clients_data/clients_fair_trained_model/NM.pth
+
+data points_NY 82432
+Training Epoch [10/10], Training Loss: 0.8777, Training Accuracy: 0.7865
+Validation Loss: 0.8865, Validation Accuracy: 0.7848
+Model saved to 50_clients_data/clients_fair_trained_model/NY.pth
+
+data points_NC 41664
+Training Epoch [10/10], Training Loss: 0.8109, Training Accuracy: 0.8072
+Validation Loss: 0.8307, Validation Accuracy: 0.8031
+Model saved to 50_clients_data/clients_fair_trained_model/NC.pth
+
+data points_ND 3584
+Training Epoch [10/10], Training Loss: 0.9127, Training Accuracy: 0.7722
+Validation Loss: 0.9576, Validation Accuracy: 0.7438
+Model saved to 50_clients_data/clients_fair_trained_model/ND.pth
+
+data points_OH 49728
+Training Epoch [10/10], Training Loss: 0.8134, Training Accuracy: 0.8071
+Validation Loss: 0.8368, Validation Accuracy: 0.7991
+Model saved to 50_clients_data/clients_fair_trained_model/OH.pth
+
+data points_OK 14336
+Training Epoch [10/10], Training Loss: 0.8091, Training Accuracy: 0.8067
+Validation Loss: 0.8529, Validation Accuracy: 0.7937
+Model saved to 50_clients_data/clients_fair_trained_model/OK.pth
+
+data points_OR 17536
+Training Epoch [10/10], Training Loss: 0.8460, Training Accuracy: 0.7955
+Validation Loss: 0.8765, Validation Accuracy: 0.7894
+Model saved to 50_clients_data/clients_fair_trained_model/OR.pth
+
+data points_PA 54656
+Training Epoch [10/10], Training Loss: 0.8416, Training Accuracy: 0.7976
+Validation Loss: 0.8672, Validation Accuracy: 0.7895
+Model saved to 50_clients_data/clients_fair_trained_model/PA.pth
+
+data points_RI 4576
+Training Epoch [10/10], Training Loss: 0.8595, Training Accuracy: 0.7910
+Validation Loss: 0.8356, Validation Accuracy: 0.8021
+Model saved to 50_clients_data/clients_fair_trained_model/RI.pth
+
+data points_SC 19904
+Training Epoch [10/10], Training Loss: 0.7998, Training Accuracy: 0.8091
+Validation Loss: 0.8568, Validation Accuracy: 0.7944
+Model saved to 50_clients_data/clients_fair_trained_model/SC.pth
+
+data points_SD 3936
+Training Epoch [10/10], Training Loss: 0.8132, Training Accuracy: 0.8102
+Validation Loss: 0.9334, Validation Accuracy: 0.7630
+Model saved to 50_clients_data/clients_fair_trained_model/SD.pth
+
+data points_TN 27232
+Training Epoch [10/10], Training Loss: 0.8159, Training Accuracy: 0.8040
+Validation Loss: 0.8148, Validation Accuracy: 0.8104
+Model saved to 50_clients_data/clients_fair_trained_model/TN.pth
+
+data points_TX 108768
+Training Epoch [10/10], Training Loss: 0.8290, Training Accuracy: 0.8018
+Validation Loss: 0.8419, Validation Accuracy: 0.7981
+Model saved to 50_clients_data/clients_fair_trained_model/TX.pth
+
+data points_UT 13088
+Training Epoch [10/10], Training Loss: 0.7293, Training Accuracy: 0.8274
+Validation Loss: 0.7502, Validation Accuracy: 0.8203
+Model saved to 50_clients_data/clients_fair_trained_model/UT.pth
+
+data points_VT 3040
+Training Epoch [10/10], Training Loss: 0.8963, Training Accuracy: 0.7859
+Validation Loss: 0.8967, Validation Accuracy: 0.7782
+Model saved to 50_clients_data/clients_fair_trained_model/VT.pth
+
+data points_VA 36928
+Training Epoch [10/10], Training Loss: 0.8152, Training Accuracy: 0.8085
+Validation Loss: 0.8308, Validation Accuracy: 0.7995
+Model saved to 50_clients_data/clients_fair_trained_model/VA.pth
+
+data points_WA 31968
+Training Epoch [10/10], Training Loss: 0.8594, Training Accuracy: 0.7949
+Validation Loss: 0.8955, Validation Accuracy: 0.7882
+Model saved to 50_clients_data/clients_fair_trained_model/WA.pth
+
+data points_WV 6496
+Training Epoch [10/10], Training Loss: 0.8324, Training Accuracy: 0.7917
+Validation Loss: 0.8582, Validation Accuracy: 0.7907
+Model saved to 50_clients_data/clients_fair_trained_model/WV.pth
+
+data points_WI 26176
+Training Epoch [10/10], Training Loss: 0.8603, Training Accuracy: 0.7888
+Validation Loss: 0.8917, Validation Accuracy: 0.7796
+Model saved to 50_clients_data/clients_fair_trained_model/WI.pth
+
+data points_WY 2464
+Training Epoch [10/10], Training Loss: 0.8757, Training Accuracy: 0.7846
+Validation Loss: 0.9852, Validation Accuracy: 0.7631
+Model saved to 50_clients_data/clients_fair_trained_model/WY.pth
