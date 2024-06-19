@@ -533,7 +533,12 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
         # extract the parameters from the client nets
         # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
 
-        client_model= f"/home/luser/chirag/tableak/50_clients_data/clients_trained_model/{state_name}.pth"
+        # c1_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/clients_trained_model/AL.pth"
+        # client_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/AL.pth"
+
+        # client_model= f"/home/chiragpandav/chirag/tableak_FT/50_clients_data/clients_trained_model/{state_name}.pth"
+        client_model= f"/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/{state_name}.pth"
+
         print("Client_model", client_model)
         client_nets[0].load_state_dict(torch.load(client_model))
         clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]

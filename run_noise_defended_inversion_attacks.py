@@ -140,7 +140,6 @@ def calculate_batch_inversion_performance_parallelized(dataset, network_layout, 
 
     return collected_data
 
-
 def main(args):
     print(args)
 

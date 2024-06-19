@@ -5,7 +5,7 @@ import torch
 from utils import match_reconstruction_ground_truth, Timer, post_process_continuous
 from attacks import train_and_attack_fed_avg
 from models import FullyConnected
-from datasets import ADULT, Lawschool, HealthHeritage, German
+from datasets import ADULT
 import argparse
 
 def calculate_fed_avg_local_dataset_inversion_performance(architecture_layout, dataset, max_client_dataset_size,
@@ -160,7 +160,7 @@ def main(args):
     # ------------ PARAMETERS ------------ #
 
     architecture_layout = [100, 100, 2]  # network architecture (fully connected)
-    max_client_dataset_size = 100
+    max_client_dataset_size = 32
     local_epochs =[5] #[1, 5, 10]
     local_batch_sizes = [8] #[32, 16, 8]
     epoch_prior_params =[0.01] #[0.0, 0.5, 0.1, 0.05, 0.01, 0.005, 0.001]
@@ -218,7 +218,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser('run_inversion_parser')
     parser.add_argument('--dataset', type=str, default='ADULT', help='Select the dataset')
     # 52 means Tableak , 0 means Inverting Gradients
-    parser.add_argument('--experiment', type=int, default=0, help='Select the experiment you wish to run') 
+    parser.add_argument('--experiment', type=int, default=52, help='Select the experiment you wish to run') 
     parser.add_argument('--name_state', type=str, default='AK', help='State Code')
     parser.add_argument('--n_samples', type=int, default=1,help='Set the number of MC samples taken for each experiment')
     parser.add_argument('--random_seed', type=int, default=2, help='Set the random state for reproducibility')

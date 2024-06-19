@@ -88,6 +88,8 @@ else:
 
                     # defense
                     grad = [g.detach() for g in torch.autograd.grad(loss, net.parameters())]
+    
+
                     perturbed_grad = dp_defense(grad, noise_scale) if noise_scale > 0 else grad
 
                     with torch.no_grad():
@@ -99,5 +101,7 @@ else:
                 collected_data[i, j, l] = acc, bac
 
                 timer.end()
+
     timer.duration()
+    print("DP_network path", save_path)
     np.save(save_path, collected_data)
