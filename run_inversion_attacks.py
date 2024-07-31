@@ -67,6 +67,8 @@ def calculate_batch_inversion_performance_parallelized(dataset, network_layout, 
         criterion = nn.CrossEntropyLoss()#weight=class_weight)
         trainer = FullyConnectedTrainer(data_x=Xtrain.detach().clone(), data_y=ytrain.detach().clone(),
                                         optimizer=optimizer, criterion=criterion, device=device, verbose=False)
+        
+        
         trainer.train(net, training_epoch, training_batch_size)
         acc, bac = get_acc_and_bac(net, Xtest, ytest)
         # print(f'Pure Test Accuracy:       {np.around(acc * 100, 2)}%')

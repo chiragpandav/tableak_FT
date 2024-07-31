@@ -17,7 +17,8 @@ import copy
 import pickle
 import os
 import multiprocessing
-
+from defenses import dp_defense
+from fair_loss import FairLoss
 
 def caller(x):
     return os.system(x)
@@ -136,7 +137,8 @@ def simulate_local_training_for_attack(client_net, lr, criterion, dataset, label
                 x_rec = continuous_sigmoid_bound(x_rec, dataset=dataset, T=temperature)
 
             outputs = client_net(x_rec, client_net.parameters)
-            #Change by me
+
+            #Change by Chirag
 
             current_batch_y=current_batch_y.unsqueeze(1).float()
 
@@ -270,6 +272,7 @@ def fed_avg_attack(original_net, attacked_clients_params, n_local_epochs, local_
             loss = rec_loss_function[reconstruction_loss](resulting_two_point_gradient, true_two_point_gradient, device)
             loss += regularizer
             loss.backward()
+
 
             if sign_trick:
                 for reconstructed_data in reconstructed_data_per_epoch:
@@ -497,6 +500,11 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
     criterion = torch.nn.BCELoss()
 
     timer = Timer(n_global_epochs)
+    
+    Normal_flag= True
+    defense_flag= False
+    fairness_flag= False
+    defense_fairness_flag= False
 
     # training loop
     for global_epoch in range(n_global_epochs):
@@ -511,37 +519,286 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
         client_nets = [copy.deepcopy(net) for _ in range(n_clients)]
 
         # iterate through each client (this should be done in parallel in theory)
-        # for client, (client_X, client_y, client_net) in enumerate(zip(Xtrain_splits, ytrain_splits, client_nets)):
+        for client, (client_X, client_y, client_net) in enumerate(zip(Xtrain_splits, ytrain_splits, client_nets)):
 
-        #     # do the local training for each client
-        #     n_batches = int(np.ceil(client_X.size()[0] / local_batch_size))
-        #     for local_epoch in range(n_local_epochs):
+            # do the local training for each client
+            n_batches = int(np.ceil(client_X.size()[0] / local_batch_size))
+            if Normal_flag is True:
+                print("Normal training")
+                print("n_batches is",n_batches)
+                print("local_epoch is ",n_local_epochs)
+                for local_epoch in range(n_local_epochs):
 
-        #         # complete an epoch
-        #         for b in range(n_batches):
-        #             current_batch_X = client_X[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
-        #             current_batch_y = client_y[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
+                    # complete an epoch
+                    for b in range(n_batches):
+                        current_batch_X = client_X[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
+                        current_batch_y = client_y[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
 
-        #             outputs = client_net(current_batch_X)
-                    # loss = criterion(outputs, current_batch_y)
-        #             grad = torch.autograd.grad(loss, client_net.parameters(), retain_graph=True)
+                        outputs = client_net(current_batch_X)
+                        current_batch_y=current_batch_y.unsqueeze(1).float()
+                        loss = criterion(outputs, current_batch_y)
+                        grad = torch.autograd.grad(loss, client_net.parameters(), retain_graph=True)
+                        
+                        with torch.no_grad():
+                            for param, param_grad in zip(client_net.parameters(), grad):
+                                param -= lr * param_grad
 
-        #             with torch.no_grad():
-        #                 for param, param_grad in zip(client_net.parameters(), grad):
-        #                     param -= lr * param_grad
+                    client_net.eval()
+                    with torch.no_grad():
+                        val_running_loss = 0.0
+                        val_correct = 0
+                        val_total = 0
 
+                        inputs, labels = dataset.get_Xtest(), dataset.get_ytest()
+                        labels = labels.unsqueeze(1).float()
+                        val_n_batches = int(np.ceil(inputs.size()[0] / local_batch_size))
+
+                        for b in range(val_n_batches):
+                            val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+                            val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+
+                            outputs = client_net(val_batch_X)
+                            val_loss = criterion(outputs, val_batch_y)
+                            val_running_loss += val_loss.item()
+
+                            predicted_classes = (outputs > 0.5).float()
+                            val_correct += (predicted_classes == val_batch_y).sum().item()
+                            val_total += val_batch_y.size(0)
+
+                        val_epoch_loss = val_running_loss / len(inputs)
+                        val_accuracy = val_correct / val_total
+
+                        print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
+                        client_net.train()
+
+                model_path = f"50_clients_data/clients_trained_model/{state_name}.pth"
+                torch.save(client_net.state_dict(), model_path)
+
+            elif defense_flag is True:
+                print("DP called")
+                noise_scale=0.1
+                X_train, y_train = dataset.get_Xtrain(), dataset.get_ytrain()
+                batch_size=local_batch_size
+                n_samples= n_clients
+
+                for j in range(n_samples):
+                    for l in range(n_local_epochs):
+                        timer.start()
+                        
+                        print(f'Noise Scale: {noise_scale}    Sample: {j+1}    Epoch: {l+1}    Acc: {100*acc:.1f}%    Bac: {100*bac:.1f}%    {timer}', end='\r')
+
+                        permutation_indices = np.random.permutation(len(X_train))
+                        X_train_permuted, y_train_permuted = X_train[permutation_indices].detach().clone(), y_train[permutation_indices].detach().clone()
+
+                        for k in range(n_batches):
+
+                            # optimizer.zero_grad()
+                            client_net.zero_grad()
+                            X_batch, y_batch = X_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)], y_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)]
+                            
+                            outputs=client_net(X_batch)
+                            y_batch=y_batch.unsqueeze(1).float()
+                            loss = criterion(outputs, y_batch)
+                            # defense
+
+                            grad = [g.detach() for g in torch.autograd.grad(loss, client_net.parameters())]
+            
+                            perturbed_grad = dp_defense(grad, noise_scale) if noise_scale > 0 else grad
+
+                            with torch.no_grad():
+                                # make the update
+                                for p, g in zip(client_net.parameters(), perturbed_grad):
+                                    p.data = p.data - lr * g
+
+                        # X_test, y_test = dataset.get_Xtest(), dataset.get_ytest()                                    
+                        # acc, bac = get_acc_and_bac(client_net, X_test, y_test)
+
+                        client_net.eval()
+                        with torch.no_grad():
+                            val_running_loss = 0.0
+                            val_correct = 0
+                            val_total = 0
+
+                            inputs, labels = dataset.get_Xtest(), dataset.get_ytest()
+                            labels = labels.unsqueeze(1).float()
+                            val_n_batches = int(np.ceil(inputs.size()[0] / local_batch_size))
+                            for b in range(val_n_batches):
+                                val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+                                val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+
+                                outputs = client_net(val_batch_X)
+                                val_loss = criterion(outputs, val_batch_y)
+                                val_running_loss += val_loss.item()
+
+                                predicted_classes = (outputs > 0.5).float()
+                                val_correct += (predicted_classes == val_batch_y).sum().item()
+                                val_total += val_batch_y.size(0)
+
+                            val_epoch_loss = val_running_loss / len(inputs)
+                            val_accuracy = val_correct / val_total
+
+                            print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
+                            client_net.train()
+
+                model_path = f"50_clients_data/client_DP_trained_model/{state_name}.pth"
+                torch.save(client_net.state_dict(), model_path)
+
+            elif fairness_flag is True:
+                print("fairess")
+
+                for local_epoch in range(n_local_epochs):
+
+                    # complete an epoch
+                    for b in range(n_batches):
+                        
+                        current_batch_X = client_X[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
+                        current_batch_y = client_y[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
+                        
+                        fair_loss=FairLoss(torch.nn.BCELoss(), current_batch_X[:, 8].detach().unique(), 'accuracy')
+                        outputs = client_net(current_batch_X)
+                        current_batch_y=current_batch_y.unsqueeze(1).float()
+                        loss_1 = criterion(outputs, current_batch_y)
+
+                        # loss_1 = criterion(outputs, labels)
+                        loss_2 = fair_loss(current_batch_X[:, 8],outputs,current_batch_y)    
+                        final_loss=loss_1+loss_2
+                        # final_loss.backward()
+            
+                        grad = torch.autograd.grad(final_loss, client_net.parameters(), retain_graph=True)
+                        
+                        with torch.no_grad():
+                            for param, param_grad in zip(client_net.parameters(), grad):
+                                param -= lr * param_grad
+
+                    client_net.eval()
+                    with torch.no_grad():
+                        val_running_loss = 0.0
+                        val_correct = 0
+                        val_total = 0
+
+                        inputs, labels = dataset.get_Xtest(), dataset.get_ytest()
+                        labels = labels.unsqueeze(1).float()                        
+                        val_n_batches = int(np.ceil(inputs.size()[0] / local_batch_size))
+
+                        for b in range(val_n_batches):
+                            val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+                            val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+
+                            outputs = client_net(val_batch_X)
+                            val_loss = criterion(outputs, val_batch_y)
+                            val_running_loss += val_loss.item()
+
+                            predicted_classes = (outputs > 0.5).float()
+                            val_correct += (predicted_classes == val_batch_y).sum().item()
+                            val_total += val_batch_y.size(0)
+
+                        val_epoch_loss = val_running_loss / len(inputs)
+                        val_accuracy = val_correct / val_total
+
+                        print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
+                        client_net.train()
+
+                model_path = f"50_clients_data/clients_fair_trained_model/{state_name}.pth"
+                torch.save(client_net.state_dict(), model_path)
+
+            elif defense_fairness_flag is True:
+                print("defense and fairness")
+
+                noise_scale=0.1
+                X_train, y_train = dataset.get_Xtrain(), dataset.get_ytrain()
+                batch_size=local_batch_size
+                n_samples= n_clients
+
+                for j in range(n_samples):
+                    for l in range(n_local_epochs):
+                        timer.start()
+                        
+                        print(f'Noise Scale: {noise_scale}    Sample: {j+1}    Epoch: {l+1}    Acc: {100*acc:.1f}%    Bac: {100*bac:.1f}%    {timer}', end='\r')
+
+                        permutation_indices = np.random.permutation(len(X_train))
+                        X_train_permuted, y_train_permuted = X_train[permutation_indices].detach().clone(), y_train[permutation_indices].detach().clone()
+
+                        for k in range(n_batches):
+
+                            # optimizer.zero_grad()
+                            client_net.zero_grad()
+                            X_batch, y_batch = X_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)], y_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)]
+                            
+                            fair_loss=FairLoss(torch.nn.BCELoss(), X_batch[:, 8].detach().unique(), 'accuracy')
+
+                            outputs=client_net(X_batch)
+                            y_batch=y_batch.unsqueeze(1).float()
+                            # loss = criterion(outputs, y_batch)
+
+                            loss_1 = criterion(outputs, y_batch)
+                            loss_2 = fair_loss(X_batch[:, 8],outputs,y_batch)   
+
+                            final_loss=loss_1+loss_2
+
+                            # defense
+                            grad = [g.detach() for g in torch.autograd.grad(final_loss, client_net.parameters())]
+            
+                            perturbed_grad = dp_defense(grad, noise_scale) if noise_scale > 0 else grad
+
+                            with torch.no_grad():
+                                # make the update
+                                for p, g in zip(client_net.parameters(), perturbed_grad):
+                                    p.data = p.data - lr * g
+                
+                        client_net.eval()
+                        with torch.no_grad():
+                            val_running_loss = 0.0
+                            val_correct = 0
+                            val_total = 0
+
+                            inputs, labels = dataset.get_Xtest(), dataset.get_ytest()
+                            labels = labels.unsqueeze(1).float()                        
+                            val_n_batches = int(np.ceil(inputs.size()[0] / local_batch_size))
+
+                            for b in range(val_n_batches):
+                                val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+                                val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
+
+                                outputs = client_net(val_batch_X)
+                                val_loss = criterion(outputs, val_batch_y)
+                                val_running_loss += val_loss.item()
+
+                                predicted_classes = (outputs > 0.5).float()
+                                val_correct += (predicted_classes == val_batch_y).sum().item()
+                                val_total += val_batch_y.size(0)
+
+                            val_epoch_loss = val_running_loss / len(inputs)
+                            val_accuracy = val_correct / val_total
+
+                            print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
+                            client_net.train()
+                
+                    model_path = f"50_clients_data/clients_DP_Fair_trained_model/{state_name}.pth"
+                    torch.save(client_net.state_dict(), model_path)
+
+            
         # extract the parameters from the client nets
-        # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
+        clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
 
         # c1_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/clients_trained_model/AL.pth"
-        # client_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/AL.pth"
+        # # client_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/AL.pth"
 
-        # client_model= f"/home/chiragpandav/chirag/tableak_FT/50_clients_data/clients_trained_model/{state_name}.pth"
-        client_model= f"/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/{state_name}.pth"
+        # client_model= f"/home/chiragpandav/Downloads/tableak_FT/50_clients_data/clients_trained_model/{state_name}.pth"
+        # # client_model= f"/home/chiragpandav/Downloads/tableak_FT/50_clients_data/client_DP_trained_model/{state_name}.pth"
+        # print("Client_model", client_model)
+        # client_nets[0].load_state_dict(torch.load(client_model))
+        # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
 
-        print("Client_model", client_model)
-        client_nets[0].load_state_dict(torch.load(client_model))
-        clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
+
+        # client_gradiant="/home/chiragpandav/Downloads/tableak_FT/AL_gradients.pth"
+        # # client_gradiant="/home/chiragpandav/Downloads/tableak_FT/AL_gradients_DP.pth"
+        # print("client_gradiant", client_gradiant)
+        # loaded_gradients = torch.load(client_gradiant)
+        # model = client_nets[0]
+        # for param, grad in zip(model.parameters(), loaded_gradients[0]):
+        #     param.grad = grad
+        # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
+
 
         # -------------- ATTACK -------------- #
         per_client_all_reconstructions = [[] for _ in range(len(attacked_clients))]
@@ -646,5 +903,9 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
         
         timer.end()
     timer.duration()
+
+    # random_baseline = calculate_random_baseline(dataset=dataset, recover_batch_sizes=reconstruction_batch_sizes,
+    #                                                     tolerance_map=tolerance_map, n_samples=n_samples, mode=mode,
+    #                                                     device=args.device)
 
     return net, training_data, per_global_epoch_per_client_reconstructions, per_global_epoch_per_client_ground_truth

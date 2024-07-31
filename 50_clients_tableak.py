@@ -9,12 +9,13 @@ state_codes = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
                "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
 count=0
+state_codes = ["AL"]
+print("---Tableak---")
 for state_code in state_codes:
     # if count==2:
     #     break
     
     subprocess.run(["python", "run_fed_avg_attacks.py", "--experiment", "52", "--name_state", state_code])
-    
     # count+=1
 
 # Loop to call hello.py 10 times with different arguments

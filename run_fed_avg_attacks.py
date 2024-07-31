@@ -7,6 +7,7 @@ from attacks import train_and_attack_fed_avg
 from models import FullyConnected
 from datasets import ADULT
 import argparse
+from attacks import calculate_random_baseline
 
 def calculate_fed_avg_local_dataset_inversion_performance(architecture_layout, dataset, max_client_dataset_size,
                                                           local_epochs, local_batch_sizes, epoch_prior_params,
@@ -20,9 +21,8 @@ def calculate_fed_avg_local_dataset_inversion_performance(architecture_layout, d
     for i, lepochs in enumerate(local_epochs):
         for j, lbatch_size in enumerate(local_batch_sizes):
             for k, epoch_prior_param in enumerate(epoch_prior_params):
-                timer.start()
+                timer.start()                
                 print(timer)
-
                 # initialize the network (we do this everytime, giving us independent experiments)
                 net = FullyConnected(dataset.num_features, architecture_layout)
 
@@ -92,8 +92,23 @@ def calculate_fed_avg_local_dataset_inversion_performance(architecture_layout, d
                 timer.end()
 
             best_param_index = np.argmin(collected_data[i, j, :, 0, 0]).item()
-            print(f'Performance at {lepochs} Epochs and {lbatch_size} Batch Size: {100*(1-collected_data[i, j, best_param_index, 0, 0]):.1f}% +- {100*collected_data[i, j, best_param_index, 0, 1]:.2f}')
 
+            print(f'Performance at {lepochs} Epochs and {lbatch_size} Batch Size: {100*(1-collected_data[i, j, best_param_index, 0, 0]):.1f}% +- {100*collected_data[i, j, best_param_index, 0, 1]:.2f}')
+            
+            display_map = {
+                'mean': 0,
+                'std': 1,
+                'median': 2,
+                'min': 3,
+                'max': 4
+            }
+            display = 'mean'
+            random_baseline = calculate_random_baseline(dataset=dataset, recover_batch_sizes=[lbatch_size],
+                                                        tolerance_map=tolerance_map, n_samples=n_samples)
+            batch_sizes = [lbatch_size]
+            # print("random acc:  ",random_baseline)
+            for l, batch_size in enumerate(batch_sizes):
+                print("random_baseline", (np.around(100 - 100*random_baseline[l, 0, display_map[display]], 1), np.around(100*random_baseline[l, 0, 1], 1)))
     return collected_data
 
 
@@ -158,11 +173,10 @@ def main(args):
     }
 
     # ------------ PARAMETERS ------------ #
-
     architecture_layout = [100, 100, 2]  # network architecture (fully connected)
-    max_client_dataset_size = 32
+    max_client_dataset_size = 6000
     local_epochs =[5] #[1, 5, 10]
-    local_batch_sizes = [8] #[32, 16, 8]
+    local_batch_sizes = [32] #[32, 16, 8]
     epoch_prior_params =[0.01] #[0.0, 0.5, 0.1, 0.05, 0.01, 0.005, 0.001]
     tol = 0.319
 
@@ -170,10 +184,8 @@ def main(args):
 
     # get the configuration
     config = configs[args.experiment]
-
     # prepare the dataset
     # print("start")
-
     dataset = datasets[args.dataset](device=args.device, random_state=args.random_seed,name_state=args.name_state)
 
     # print("end:: ", datasets[args.dataset])
@@ -213,13 +225,12 @@ def main(args):
     print('==================================================================')
     print('==================================================================')
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('run_inversion_parser')
     parser.add_argument('--dataset', type=str, default='ADULT', help='Select the dataset')
     # 52 means Tableak , 0 means Inverting Gradients
-    parser.add_argument('--experiment', type=int, default=52, help='Select the experiment you wish to run') 
-    parser.add_argument('--name_state', type=str, default='AK', help='State Code')
+    parser.add_argument('--experiment', type=int, default=0, help='Select the experiment you wish to run') 
+    parser.add_argument('--name_state', type=str, default='AL', help='State Code')
     parser.add_argument('--n_samples', type=int, default=1,help='Set the number of MC samples taken for each experiment')
     parser.add_argument('--random_seed', type=int, default=2, help='Set the random state for reproducibility')
     parser.add_argument('--max_n_cpus', type=int, default=4, help='The number of available cpus')

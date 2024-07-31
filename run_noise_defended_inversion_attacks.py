@@ -65,12 +65,16 @@ def calculate_batch_inversion_performance_parallelized(dataset, network_layout, 
 
         # prepare, train and evaluate the network we are attacking
         net = FullyConnected(dataset.num_features, network_layout).to(device)
+
         optimizer = torch.optim.Adam(net.parameters())
         criterion = nn.CrossEntropyLoss()#weight=class_weight)
         trainer = FullyConnectedTrainer(data_x=Xtrain.detach().clone(), data_y=ytrain.detach().clone(),
                                         optimizer=optimizer, criterion=criterion, device=device, verbose=False)
+        
+
         trainer.train(net, training_epoch, training_batch_size)
         acc, bac = get_acc_and_bac(net, Xtest, ytest)
+        
         print(f'Pure Test Accuracy:       {np.around(acc * 100, 2)}%')
         print(f'Balanced Test Accuracy:   {np.around(bac * 100, 2)}%')
 
@@ -115,6 +119,7 @@ def calculate_batch_inversion_performance_parallelized(dataset, network_layout, 
 
                     # postprocess the reconstruction and convert back to categorical features
                     target_batch_cat = dataset.decode_batch(target_batch, standardized=dataset.standardized)
+
                     batch_recon_cat = dataset.decode_batch(post_process_continuous(batch_recon, dataset),
                                                            standardized=dataset.standardized)
 

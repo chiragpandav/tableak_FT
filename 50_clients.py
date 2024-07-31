@@ -8,14 +8,15 @@ import os
 #                "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
 #                "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
+# state_codes = ["AL","AK", "AZ"]
 state_codes = ["AL"]
-
+print("Inversion")
 count=0
 for state_code in state_codes:
     # if count==2:
     #     break
     
-    subprocess.run(["python", "run_fed_avg_attacks.py", "--experiment", "0", "--name_state", state_code])
+    subprocess.run(["python3", "run_fed_avg_attacks.py", "--experiment", "0", "--name_state", state_code])
     
     # count+=1
 

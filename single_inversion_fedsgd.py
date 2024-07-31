@@ -52,6 +52,7 @@ def main(args):
         output = net(target_batch)
         true_bn_stats = None
     target_loss = criterion(output, target_batch_labels)
+
     input_gradient = torch.autograd.grad(target_loss, net.parameters())
     input_gradient = [grad.detach() for grad in input_gradient]
 
@@ -68,6 +69,11 @@ def main(args):
         # defend the gradient
         input_gradient = dp_defense(in_grad=input_gradient, scale=args.dp_scale,
                                     noise_distribution=config['dp_noise_distribution'])
+        
+        # input_gradient=torch.load()
+        # client_gradiant="/home/chiragpandav/Downloads/tableak_FT/AL_gradients_DP.pth"
+        # print("client_gradiant", client_gradiant)
+        # loaded_gradients = torch.load(client_gradiant)
         args.metadata_path = args.metadata_path + f'/scale_{args.dp_scale}'
 
     if args.brute_force_labels:
