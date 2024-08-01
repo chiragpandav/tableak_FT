@@ -1,4 +1,4 @@
-# Run file in following order:
+# Run files in following order:
 # ----- For training-----Torch 1.7
 -50_client_raw_data.ipynb
 
