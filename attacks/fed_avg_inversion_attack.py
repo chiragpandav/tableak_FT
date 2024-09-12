@@ -495,16 +495,23 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
     Xtrain_splits = [Xtrain[i*split_size:min(int(Xtrain.size()[0]), (i+1)*split_size)].clone().detach() for i in range(n_clients)]
     ytrain_splits = [ytrain[i*split_size:min(int(Xtrain.size()[0]), (i+1)*split_size)].clone().detach() for i in range(n_clients)]
 
+    print("Data use for training:: ", Xtrain_splits[0].shape)
+
     # instantiate the loss
     # criterion = torch.nn.CrossEntropyLoss()
     criterion = torch.nn.BCELoss()
 
     timer = Timer(n_global_epochs)
     
-    Normal_flag= True
+    Normal_flag= False
     defense_flag= False
     fairness_flag= False
-    defense_fairness_flag= False
+    senstive_attr=8 # 8: Sex and 9: Race
+    
+    defense_fairness_flag= True
+
+    attack_bool= False
+    
 
     # training loop
     for global_epoch in range(n_global_epochs):
@@ -522,7 +529,9 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
         for client, (client_X, client_y, client_net) in enumerate(zip(Xtrain_splits, ytrain_splits, client_nets)):
 
             # do the local training for each client
+            
             n_batches = int(np.ceil(client_X.size()[0] / local_batch_size))
+
             if Normal_flag is True:
                 print("Normal training")
                 print("n_batches is",n_batches)
@@ -645,7 +654,7 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
 
             elif fairness_flag is True:
                 print("fairess")
-
+                
                 for local_epoch in range(n_local_epochs):
 
                     # complete an epoch
@@ -654,13 +663,13 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                         current_batch_X = client_X[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
                         current_batch_y = client_y[b * local_batch_size:min(int(client_X.size()[0]), (b+1)*local_batch_size)].clone().detach()
                         
-                        fair_loss=FairLoss(torch.nn.BCELoss(), current_batch_X[:, 8].detach().unique(), 'accuracy')
+                        fair_loss=FairLoss(torch.nn.BCELoss(), current_batch_X[:, senstive_attr].detach().unique(), 'accuracy')
                         outputs = client_net(current_batch_X)
                         current_batch_y=current_batch_y.unsqueeze(1).float()
                         loss_1 = criterion(outputs, current_batch_y)
 
                         # loss_1 = criterion(outputs, labels)
-                        loss_2 = fair_loss(current_batch_X[:, 8],outputs,current_batch_y)    
+                        loss_2 = fair_loss(current_batch_X[:, senstive_attr],outputs,current_batch_y)    
                         final_loss=loss_1+loss_2
                         # final_loss.backward()
             
@@ -724,14 +733,14 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                             client_net.zero_grad()
                             X_batch, y_batch = X_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)], y_train_permuted[k*batch_size:max(len(X_train_permuted), (k+1)*batch_size)]
                             
-                            fair_loss=FairLoss(torch.nn.BCELoss(), X_batch[:, 8].detach().unique(), 'accuracy')
+                            fair_loss=FairLoss(torch.nn.BCELoss(), X_batch[:, senstive_attr].detach().unique(), 'accuracy')
 
                             outputs=client_net(X_batch)
                             y_batch=y_batch.unsqueeze(1).float()
                             # loss = criterion(outputs, y_batch)
 
                             loss_1 = criterion(outputs, y_batch)
-                            loss_2 = fair_loss(X_batch[:, 8],outputs,y_batch)   
+                            loss_2 = fair_loss(X_batch[:, senstive_attr],outputs,y_batch)   
 
                             final_loss=loss_1+loss_2
 
@@ -800,91 +809,97 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
         # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
 
 
-        # -------------- ATTACK -------------- #
-        per_client_all_reconstructions = [[] for _ in range(len(attacked_clients))]
-        per_client_best_reconstructions = [None for _ in range(len(attacked_clients))]
-        per_client_best_scores = [None for _ in range(len(attacked_clients))]
-        per_client_ground_truth_data = [Xtrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
-        per_client_ground_truth_labels = [ytrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
-        attacked_clients_params = [[param.clone().detach() for param in clients_params[attacked_client]] for attacked_client in attacked_clients]
-
-        for _ in range(post_selection):
-
-            if parallelized:
-                # print("parallelized")
-                per_client_candidate_reconstructions, per_client_final_losses = fed_avg_attack_parallelized_over_clients(
-                    original_net=copy.deepcopy(net),
-                    attacked_clients_params=attacked_clients_params,
-                    attack_iterations=attack_iterations,
-                    attack_learning_rate=attack_learning_rate,
-                    n_local_epochs=n_local_epochs,
-                    local_batch_size=local_batch_size,
-                    lr=lr,
-                    dataset=dataset,
-                    per_client_ground_truth_data=per_client_ground_truth_data,
-                    per_client_ground_truth_labels=per_client_ground_truth_labels,
-                    reconstruction_loss=reconstruction_loss,
-                    priors=priors,
-                    epoch_matching_prior=epoch_matching_prior,
-                    initialization_mode=initialization_mode,
-                    softmax_trick=softmax_trick,
-                    gumbel_softmax_trick=gumbel_softmax_trick,
-                    sigmoid_trick=sigmoid_trick,
-                    temperature_mode=temperature_mode,
-                    sign_trick=sign_trick,
-                    apply_projection_to_features=fish_for_features,
-                    max_n_cpus=max_n_cpus,
-                    first_cpu=first_cpu,
-                    device=device,
-                    metadata_path=metadata_path
-                )
-
-            else:
-                per_client_candidate_reconstructions, per_client_final_losses = fed_avg_attack(
-                    original_net=copy.deepcopy(net),
-                    attacked_clients_params=attacked_clients_params,
-                    attack_iterations=attack_iterations,
-                    attack_learning_rate=attack_learning_rate,
-                    n_local_epochs=n_local_epochs,
-                    local_batch_size=local_batch_size,
-                    lr=lr,
-                    dataset=dataset,
-                    per_client_ground_truth_data=per_client_ground_truth_data,
-                    per_client_ground_truth_labels=per_client_ground_truth_labels,
-                    reconstruction_loss=reconstruction_loss,
-                    priors=priors,
-                    epoch_matching_prior=epoch_matching_prior,
-                    initialization_mode=initialization_mode,
-                    softmax_trick=softmax_trick,
-                    gumbel_softmax_trick=gumbel_softmax_trick,
-                    sigmoid_trick=sigmoid_trick,
-                    temperature_mode=temperature_mode,
-                    sign_trick=sign_trick,
-                    apply_projection_to_features=fish_for_features,
-                    device=device
-                )
-
-            # enter the results in the collectors
-            for client_idx in range(len(attacked_clients)):
-                per_client_all_reconstructions[client_idx].append(per_client_candidate_reconstructions[client_idx].detach().clone())
-                if (per_client_best_scores[client_idx] is None) or (per_client_best_scores[client_idx] > per_client_final_losses[client_idx]):
-                    per_client_best_scores[client_idx] = per_client_final_losses[client_idx]
-                    per_client_best_reconstructions[client_idx] = per_client_candidate_reconstructions[client_idx].detach().clone()
-
-        if return_all:
-            per_global_epoch_per_client_reconstructions.append(per_client_all_reconstructions)
-        elif pooling is not None:
-            if perfect_pooling:
-                per_client_pooled = [pooled_ensemble(all_reconstructions, ground_truth_data, dataset, pooling=pooling)
-                                     for all_reconstructions, ground_truth_data in zip(per_client_all_reconstructions, per_client_ground_truth_data)]
-            else:
-                per_client_pooled = [pooled_ensemble(all_reconstructions, best_reconstruction, dataset, pooling=pooling)
-                                     for all_reconstructions, best_reconstruction in zip(per_client_all_reconstructions, per_client_best_reconstructions)]
-            per_global_epoch_per_client_reconstructions.append(per_client_pooled)
+        if attack_bool is False:
+            print("---------------------------------------")
+            print("-----Attack Is NOT Being Applied-------")
+            print("---------------------------------------")
+            break
         else:
-            per_global_epoch_per_client_reconstructions.append(per_client_best_reconstructions)
-        per_global_epoch_per_client_ground_truth.append(per_client_ground_truth_data)
-        # -------------- ATTACK END -------------- #
+            # -------------- ATTACK -------------- #
+            per_client_all_reconstructions = [[] for _ in range(len(attacked_clients))]
+            per_client_best_reconstructions = [None for _ in range(len(attacked_clients))]
+            per_client_best_scores = [None for _ in range(len(attacked_clients))]
+            per_client_ground_truth_data = [Xtrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
+            per_client_ground_truth_labels = [ytrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
+            attacked_clients_params = [[param.clone().detach() for param in clients_params[attacked_client]] for attacked_client in attacked_clients]
+
+            for _ in range(post_selection):
+
+                if parallelized:
+                    # print("parallelized")
+                    per_client_candidate_reconstructions, per_client_final_losses = fed_avg_attack_parallelized_over_clients(
+                        original_net=copy.deepcopy(net),
+                        attacked_clients_params=attacked_clients_params,
+                        attack_iterations=attack_iterations,
+                        attack_learning_rate=attack_learning_rate,
+                        n_local_epochs=n_local_epochs,
+                        local_batch_size=local_batch_size,
+                        lr=lr,
+                        dataset=dataset,
+                        per_client_ground_truth_data=per_client_ground_truth_data,
+                        per_client_ground_truth_labels=per_client_ground_truth_labels,
+                        reconstruction_loss=reconstruction_loss,
+                        priors=priors,
+                        epoch_matching_prior=epoch_matching_prior,
+                        initialization_mode=initialization_mode,
+                        softmax_trick=softmax_trick,
+                        gumbel_softmax_trick=gumbel_softmax_trick,
+                        sigmoid_trick=sigmoid_trick,
+                        temperature_mode=temperature_mode,
+                        sign_trick=sign_trick,
+                        apply_projection_to_features=fish_for_features,
+                        max_n_cpus=max_n_cpus,
+                        first_cpu=first_cpu,
+                        device=device,
+                        metadata_path=metadata_path
+                    )
+
+                else:
+                    per_client_candidate_reconstructions, per_client_final_losses = fed_avg_attack(
+                        original_net=copy.deepcopy(net),
+                        attacked_clients_params=attacked_clients_params,
+                        attack_iterations=attack_iterations,
+                        attack_learning_rate=attack_learning_rate,
+                        n_local_epochs=n_local_epochs,
+                        local_batch_size=local_batch_size,
+                        lr=lr,
+                        dataset=dataset,
+                        per_client_ground_truth_data=per_client_ground_truth_data,
+                        per_client_ground_truth_labels=per_client_ground_truth_labels,
+                        reconstruction_loss=reconstruction_loss,
+                        priors=priors,
+                        epoch_matching_prior=epoch_matching_prior,
+                        initialization_mode=initialization_mode,
+                        softmax_trick=softmax_trick,
+                        gumbel_softmax_trick=gumbel_softmax_trick,
+                        sigmoid_trick=sigmoid_trick,
+                        temperature_mode=temperature_mode,
+                        sign_trick=sign_trick,
+                        apply_projection_to_features=fish_for_features,
+                        device=device
+                    )
+
+                # enter the results in the collectors
+                for client_idx in range(len(attacked_clients)):
+                    per_client_all_reconstructions[client_idx].append(per_client_candidate_reconstructions[client_idx].detach().clone())
+                    if (per_client_best_scores[client_idx] is None) or (per_client_best_scores[client_idx] > per_client_final_losses[client_idx]):
+                        per_client_best_scores[client_idx] = per_client_final_losses[client_idx]
+                        per_client_best_reconstructions[client_idx] = per_client_candidate_reconstructions[client_idx].detach().clone()
+
+            if return_all:
+                per_global_epoch_per_client_reconstructions.append(per_client_all_reconstructions)
+            elif pooling is not None:
+                if perfect_pooling:
+                    per_client_pooled = [pooled_ensemble(all_reconstructions, ground_truth_data, dataset, pooling=pooling)
+                                        for all_reconstructions, ground_truth_data in zip(per_client_all_reconstructions, per_client_ground_truth_data)]
+                else:
+                    per_client_pooled = [pooled_ensemble(all_reconstructions, best_reconstruction, dataset, pooling=pooling)
+                                        for all_reconstructions, best_reconstruction in zip(per_client_all_reconstructions, per_client_best_reconstructions)]
+                per_global_epoch_per_client_reconstructions.append(per_client_pooled)
+            else:
+                per_global_epoch_per_client_reconstructions.append(per_client_best_reconstructions)
+            per_global_epoch_per_client_ground_truth.append(per_client_ground_truth_data)
+            # -------------- ATTACK END -------------- #
 
         # Continue the training
         # transpose the list
