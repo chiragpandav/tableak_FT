@@ -6,6 +6,8 @@
 
 -python 50_clients.py
 
+- run_fed_avg_attacks.py/ fed_avg_inversion_attack.py 
+
 
 # --- For testing--- Torch2.1
 -50_client_raw_data.ipynb
