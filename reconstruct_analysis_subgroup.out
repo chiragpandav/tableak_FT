@@ -1,0 +1,2062 @@
+Inversion Normal attack
+----------- Model_name --------------:  AL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(851, 10) (851, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(186, 10) (186, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(736, 10) (736, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(227, 10) (227, 10)
+----------- Model_name --------------:  AK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1101, 10) (1101, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(39, 10) (39, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(832, 10) (832, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  AZ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(49, 10) (49, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(896, 10) (896, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(40, 10) (40, 10)
+----------- Model_name --------------:  AR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(946, 10) (946, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(863, 10) (863, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(105, 10) (105, 10)
+----------- Model_name --------------:  CA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(988, 10) (988, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(75, 10) (75, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(68, 10) (68, 10)
+----------- Model_name --------------:  CO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1027, 10) (1027, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(909, 10) (909, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  CT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(82, 10) (82, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(899, 10) (899, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  DE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(149, 10) (149, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(824, 10) (824, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(179, 10) (179, 10)
+----------- Model_name --------------:  FL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(924, 10) (924, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(102, 10) (102, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(835, 10) (835, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(139, 10) (139, 10)
+----------- Model_name --------------:  GA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(800, 10) (800, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(228, 10) (228, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(676, 10) (676, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(296, 10) (296, 10)
+----------- Model_name --------------:  HI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(94, 10) (94, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(780, 10) (780, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(48, 10) (48, 10)
+----------- Model_name --------------:  ID
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(910, 10) (910, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+----------- Model_name --------------:  IL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(87, 10) (87, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(867, 10) (867, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(107, 10) (107, 10)
+----------- Model_name --------------:  IN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(73, 10) (73, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(883, 10) (883, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(76, 10) (76, 10)
+----------- Model_name --------------:  IA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1026, 10) (1026, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(25, 10) (25, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(19, 10) (19, 10)
+----------- Model_name --------------:  KS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(50, 10) (50, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(901, 10) (901, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(34, 10) (34, 10)
+----------- Model_name --------------:  KY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(984, 10) (984, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(59, 10) (59, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(895, 10) (895, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  LA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(214, 10) (214, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(683, 10) (683, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(305, 10) (305, 10)
+----------- Model_name --------------:  ME
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1011, 10) (1011, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(9, 10) (9, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(965, 10) (965, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(15, 10) (15, 10)
+----------- Model_name --------------:  MD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(749, 10) (749, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(249, 10) (249, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(713, 10) (713, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(289, 10) (289, 10)
+----------- Model_name --------------:  MA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(72, 10) (72, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(933, 10) (933, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(56, 10) (56, 10)
+----------- Model_name --------------:  MI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(966, 10) (966, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(74, 10) (74, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(862, 10) (862, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  MN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1030, 10) (1030, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(28, 10) (28, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(912, 10) (912, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(30, 10) (30, 10)
+----------- Model_name --------------:  MS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(734, 10) (734, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(273, 10) (273, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(631, 10) (631, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(362, 10) (362, 10)
+----------- Model_name --------------:  MO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(975, 10) (975, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(63, 10) (63, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(885, 10) (885, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(77, 10) (77, 10)
+----------- Model_name --------------:  MT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1068, 10) (1068, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(5, 10) (5, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(926, 10) (926, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(1, 10) (1, 10)
+----------- Model_name --------------:  NE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1039, 10) (1039, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(16, 10) (16, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(925, 10) (925, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(20, 10) (20, 10)
+----------- Model_name --------------:  NV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(92, 10) (92, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(841, 10) (841, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(99, 10) (99, 10)
+----------- Model_name --------------:  NH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(10, 10) (10, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(6, 10) (6, 10)
+----------- Model_name --------------:  NJ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(908, 10) (908, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(125, 10) (125, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(842, 10) (842, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(125, 10) (125, 10)
+----------- Model_name --------------:  NM
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(29, 10) (29, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(25, 10) (25, 10)
+----------- Model_name --------------:  NY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(880, 10) (880, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(128, 10) (128, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(144, 10) (144, 10)
+----------- Model_name --------------:  NC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(865, 10) (865, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(161, 10) (161, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(763, 10) (763, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(211, 10) (211, 10)
+----------- Model_name --------------:  ND
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1098, 10) (1098, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(20, 10) (20, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(879, 10) (879, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  OH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(953, 10) (953, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(870, 10) (870, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(91, 10) (91, 10)
+----------- Model_name --------------:  OK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(986, 10) (986, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(71, 10) (71, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(873, 10) (873, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(70, 10) (70, 10)
+----------- Model_name --------------:  OR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(17, 10) (17, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(947, 10) (947, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  PA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(987, 10) (987, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(57, 10) (57, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(894, 10) (894, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  RI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(948, 10) (948, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(53, 10) (53, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(949, 10) (949, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(50, 10) (50, 10)
+----------- Model_name --------------:  SC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(822, 10) (822, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(195, 10) (195, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(735, 10) (735, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(248, 10) (248, 10)
+----------- Model_name --------------:  SD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(14, 10) (14, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  TN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(109, 10) (109, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(163, 10) (163, 10)
+----------- Model_name --------------:  TX
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(95, 10) (95, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(816, 10) (816, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(128, 10) (128, 10)
+----------- Model_name --------------:  UT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1071, 10) (1071, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  VT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1029, 10) (1029, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(6, 10) (6, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(7, 10) (7, 10)
+----------- Model_name --------------:  VA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(166, 10) (166, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(791, 10) (791, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(174, 10) (174, 10)
+----------- Model_name --------------:  WA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(41, 10) (41, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(905, 10) (905, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  WV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(26, 10) (26, 10)
+----------- Model_name --------------:  WI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1031, 10) (1031, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(26, 10) (26, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(915, 10) (915, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  WY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1052, 10) (1052, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(7, 10) (7, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(937, 10) (937, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+All state reconstructed data has been stored in inversion_normal_all_states_reconstruction.pickle
+[[0.404764448242709], [0.4902248289345063], [0.3569664031620553], [0.43852623147777325]]
+[[0.3530674593344893], [0.5594405594405596], [0.3603583916083916], [0.5357142857142857]]
+[[0.347783251231527], [0.5102040816326531], [0.32863230519480513], [0.5204545454545455]]
+[[0.328944839515664], [0.47357293868921774], [0.3033814389550194], [0.45454545454545453]]
+[[0.3576555023923444], [0.5199999999999999], [0.3578826237054085], [0.5147058823529411]]
+[[0.33221209170576255], [0.5316804407713499], [0.34323432343234317], [0.5425219941348973]]
+[[0.38160102655216654], [0.5332594235033259], [0.373950854484781], [0.5083487940630796]]
+[[0.36524442538593477], [0.47651006711409394], [0.36352603706972636], [0.4692737430167598]]
+[[0.3625541125541125], [0.4714795008912655], [0.3389221556886228], [0.4512753433616743]]
+[[0.3884090909090909], [0.46212121212121204], [0.38219472834857454], [0.4336609336609337]]
+[[0.36608196997807385], [0.5377176015473887], [0.3657342657342657], [0.5852272727272727]]
+[[0.32981953111823237], [0.6477272727272727], [0.31048951048951046], [0.6136363636363636]]
+[[0.35608480975893103], [0.4817136886102402], [0.33071196392995694], [0.45114698385726415]]
+[[0.36354244928625085], [0.523038605230386], [0.3114382785956965], [0.4700956937799044]]
+[[0.3743576111997164], [0.5745454545454546], [0.3273704789833821], [0.583732057416268]]
+[[0.35996417375727713], [0.5327272727272727], [0.31974573705983256], [0.5213903743315508]]
+[[0.35735402808573535], [0.5269645608628659], [0.319756221432199], [0.5205278592375366]]
+[[0.3734335839598997], [0.4367034834324553], [0.3448688939172102], [0.40536512667660207]]
+[[0.36561460300332704], [0.6161616161616162], [0.3203014601978332], [0.5696969696969697]]
+[[0.39167374681393374], [0.46184738955823296], [0.39143185005737596], [0.4491978609625668]]
+[[0.37786813825152477], [0.5441919191919191], [0.34356425996297374], [0.5405844155844155]]
+[[0.3756822887257669], [0.5073710073710073], [0.34106728538283065], [0.484230055658627]]
+[[0.35551632833186225], [0.5487012987012986], [0.33024322169059006], [0.5454545454545454]]
+[[0.41689373297002724], [0.4485514485514485], [0.3522547183402968], [0.39804118533400296]]
+[[0.3495571095571095], [0.4992784992784992], [0.3220338983050847], [0.4899645808736718]]
+[[0.35725229826353416], [0.6545454545454545], [0.3236795601806401], [0.7272727272727273]]
+[[0.3607489719135532], [0.6022727272727273], [0.325012285012285], [0.5409090909090908]]
+[[0.3226897069872276], [0.4673913043478261], [0.32947789428169927], [0.47199265381083555]]
+[[0.33591042388696346], [0.5818181818181818], [0.320877873427301], [0.6363636363636364]]
+[[0.4037845414497396], [0.5338181818181819], [0.3900885337939969], [0.514181818181818]]
+[[0.32932437212592847], [0.5799373040752351], [0.31778570013864127], [0.5054545454545455]]
+[[0.3949380165289256], [0.5056818181818181], [0.36674528301886794], [0.4684343434343434]]
+[[0.36710457172884914], [0.4889892715979672], [0.35696413678065053], [0.4196467040068935]]
+[[0.35643318430203674], [0.6545454545454545], [0.3236115420415761], [0.6969696969696969]]
+[[0.37584660879519216], [0.4957716701902749], [0.3425287356321839], [0.4725274725274725]]
+[[0.38198414161902994], [0.5326504481434059], [0.3227116526085598], [0.4662337662337663]]
+[[0.34497700742836923], [0.5668449197860962], [0.3404051070365748], [0.6136363636363636]]
+[[0.36363636363636354], [0.5199362041467304], [0.3338417734390888], [0.49999999999999994]]
+[[0.34858074415036433], [0.5437392795883361], [0.33020404253280955], [0.5163636363636364]]
+[[0.3845388188453881], [0.4703962703962703], [0.3621521335807049], [0.43401759530791784]]
+[[0.3670231729055258], [0.6103896103896105], [0.31286771683431386], [0.5454545454545454]]
+[[0.3767350928641251], [0.5029190992493744], [0.35702893597630436], [0.4506413831567206]]
+[[0.34717623687446786], [0.49760765550239244], [0.32174688057040995], [0.45880681818181807]]
+[[0.36024106612341905], [0.625], [0.3213507625272331], [0.6666666666666666]]
+[[0.3543599257884971], [0.5909090909090908], [0.3375403302334408], [0.6363636363636364]]
+[[0.3575687833455382], [0.47371303395399783], [0.3482358349614987], [0.44984326018808773]]
+[[0.36310317248733665], [0.5454545454545454], [0.35429432446007025], [0.5571847507331379]]
+[[0.36934046345811045], [0.5482093663911844], [0.32089625900700813], [0.5349650349650349]]
+[[0.3565823119654351], [0.5874125874125874], [0.32329855936413304], [0.5032467532467532]]
+[[0.3520566885585896], [0.6103896103896104], [0.2968856117201901], [0.5227272727272727]]
+sub Group reconstructed data has been stored in inversion_normal_subgroup_reconstruction.pickle
+Inversion DP attack
+----------- Model_name --------------:  AL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(851, 10) (851, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(186, 10) (186, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(736, 10) (736, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(227, 10) (227, 10)
+----------- Model_name --------------:  AK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1101, 10) (1101, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(39, 10) (39, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(832, 10) (832, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  AZ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(49, 10) (49, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(896, 10) (896, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(40, 10) (40, 10)
+----------- Model_name --------------:  AR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(946, 10) (946, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(863, 10) (863, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(105, 10) (105, 10)
+----------- Model_name --------------:  CA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(988, 10) (988, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(75, 10) (75, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(68, 10) (68, 10)
+----------- Model_name --------------:  CO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1027, 10) (1027, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(909, 10) (909, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  CT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(82, 10) (82, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(899, 10) (899, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  DE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(149, 10) (149, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(824, 10) (824, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(179, 10) (179, 10)
+----------- Model_name --------------:  FL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(924, 10) (924, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(102, 10) (102, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(835, 10) (835, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(139, 10) (139, 10)
+----------- Model_name --------------:  GA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(800, 10) (800, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(228, 10) (228, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(676, 10) (676, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(296, 10) (296, 10)
+----------- Model_name --------------:  HI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(94, 10) (94, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(780, 10) (780, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(48, 10) (48, 10)
+----------- Model_name --------------:  ID
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(910, 10) (910, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+----------- Model_name --------------:  IL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(87, 10) (87, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(867, 10) (867, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(107, 10) (107, 10)
+----------- Model_name --------------:  IN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(73, 10) (73, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(883, 10) (883, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(76, 10) (76, 10)
+----------- Model_name --------------:  IA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1026, 10) (1026, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(25, 10) (25, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(19, 10) (19, 10)
+----------- Model_name --------------:  KS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(50, 10) (50, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(901, 10) (901, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(34, 10) (34, 10)
+----------- Model_name --------------:  KY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(984, 10) (984, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(59, 10) (59, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(895, 10) (895, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  LA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(214, 10) (214, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(683, 10) (683, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(305, 10) (305, 10)
+----------- Model_name --------------:  ME
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1011, 10) (1011, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(9, 10) (9, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(965, 10) (965, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(15, 10) (15, 10)
+----------- Model_name --------------:  MD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(749, 10) (749, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(249, 10) (249, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(713, 10) (713, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(289, 10) (289, 10)
+----------- Model_name --------------:  MA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(72, 10) (72, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(933, 10) (933, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(56, 10) (56, 10)
+----------- Model_name --------------:  MI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(966, 10) (966, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(74, 10) (74, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(862, 10) (862, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  MN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1030, 10) (1030, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(28, 10) (28, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(912, 10) (912, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(30, 10) (30, 10)
+----------- Model_name --------------:  MS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(734, 10) (734, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(273, 10) (273, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(631, 10) (631, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(362, 10) (362, 10)
+----------- Model_name --------------:  MO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(975, 10) (975, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(63, 10) (63, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(885, 10) (885, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(77, 10) (77, 10)
+----------- Model_name --------------:  MT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1068, 10) (1068, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(5, 10) (5, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(926, 10) (926, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(1, 10) (1, 10)
+----------- Model_name --------------:  NE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1039, 10) (1039, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(16, 10) (16, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(925, 10) (925, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(20, 10) (20, 10)
+----------- Model_name --------------:  NV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(92, 10) (92, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(841, 10) (841, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(99, 10) (99, 10)
+----------- Model_name --------------:  NH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(10, 10) (10, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(6, 10) (6, 10)
+----------- Model_name --------------:  NJ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(908, 10) (908, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(125, 10) (125, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(842, 10) (842, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(125, 10) (125, 10)
+----------- Model_name --------------:  NM
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(29, 10) (29, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(25, 10) (25, 10)
+----------- Model_name --------------:  NY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(880, 10) (880, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(128, 10) (128, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(144, 10) (144, 10)
+----------- Model_name --------------:  NC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(865, 10) (865, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(161, 10) (161, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(763, 10) (763, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(211, 10) (211, 10)
+----------- Model_name --------------:  ND
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1098, 10) (1098, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(20, 10) (20, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(879, 10) (879, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  OH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(953, 10) (953, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(870, 10) (870, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(91, 10) (91, 10)
+----------- Model_name --------------:  OK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(986, 10) (986, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(71, 10) (71, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(873, 10) (873, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(70, 10) (70, 10)
+----------- Model_name --------------:  OR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(17, 10) (17, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(947, 10) (947, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  PA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(987, 10) (987, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(57, 10) (57, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(894, 10) (894, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  RI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(948, 10) (948, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(53, 10) (53, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(949, 10) (949, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(50, 10) (50, 10)
+----------- Model_name --------------:  SC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(822, 10) (822, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(195, 10) (195, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(735, 10) (735, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(248, 10) (248, 10)
+----------- Model_name --------------:  SD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(14, 10) (14, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  TN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(109, 10) (109, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(163, 10) (163, 10)
+----------- Model_name --------------:  TX
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(95, 10) (95, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(816, 10) (816, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(128, 10) (128, 10)
+----------- Model_name --------------:  UT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1071, 10) (1071, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  VT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1029, 10) (1029, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(6, 10) (6, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(7, 10) (7, 10)
+----------- Model_name --------------:  VA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(166, 10) (166, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(791, 10) (791, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(174, 10) (174, 10)
+----------- Model_name --------------:  WA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(41, 10) (41, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(905, 10) (905, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  WV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(26, 10) (26, 10)
+----------- Model_name --------------:  WI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1031, 10) (1031, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(26, 10) (26, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(915, 10) (915, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  WY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1052, 10) (1052, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(7, 10) (7, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(937, 10) (937, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+All state reconstructed data(DP) has been stored in inversion_dp_all_states_reconstruction.pickle
+subgroup reconstructed data (DP) has been stored in inversion_dp_subgroup_reconstruction.pickle
+Inversion Fair attack
+----------- Model_name --------------:  AL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(851, 10) (851, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(186, 10) (186, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(736, 10) (736, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(227, 10) (227, 10)
+----------- Model_name --------------:  AK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1101, 10) (1101, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(39, 10) (39, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(832, 10) (832, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  AZ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(49, 10) (49, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(896, 10) (896, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(40, 10) (40, 10)
+----------- Model_name --------------:  AR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(946, 10) (946, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(863, 10) (863, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(105, 10) (105, 10)
+----------- Model_name --------------:  CA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(988, 10) (988, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(75, 10) (75, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(68, 10) (68, 10)
+----------- Model_name --------------:  CO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1027, 10) (1027, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(909, 10) (909, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  CT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(82, 10) (82, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(899, 10) (899, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  DE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(149, 10) (149, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(824, 10) (824, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(179, 10) (179, 10)
+----------- Model_name --------------:  FL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(924, 10) (924, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(102, 10) (102, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(835, 10) (835, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(139, 10) (139, 10)
+----------- Model_name --------------:  GA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(800, 10) (800, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(228, 10) (228, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(676, 10) (676, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(296, 10) (296, 10)
+----------- Model_name --------------:  HI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(94, 10) (94, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(780, 10) (780, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(48, 10) (48, 10)
+----------- Model_name --------------:  ID
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(910, 10) (910, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+----------- Model_name --------------:  IL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(87, 10) (87, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(867, 10) (867, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(107, 10) (107, 10)
+----------- Model_name --------------:  IN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(73, 10) (73, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(883, 10) (883, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(76, 10) (76, 10)
+----------- Model_name --------------:  IA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1026, 10) (1026, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(25, 10) (25, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(19, 10) (19, 10)
+----------- Model_name --------------:  KS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(50, 10) (50, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(901, 10) (901, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(34, 10) (34, 10)
+----------- Model_name --------------:  KY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(984, 10) (984, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(59, 10) (59, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(895, 10) (895, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  LA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(214, 10) (214, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(683, 10) (683, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(305, 10) (305, 10)
+----------- Model_name --------------:  ME
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1011, 10) (1011, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(9, 10) (9, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(965, 10) (965, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(15, 10) (15, 10)
+----------- Model_name --------------:  MD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(749, 10) (749, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(249, 10) (249, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(713, 10) (713, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(289, 10) (289, 10)
+----------- Model_name --------------:  MA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(72, 10) (72, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(933, 10) (933, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(56, 10) (56, 10)
+----------- Model_name --------------:  MI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(966, 10) (966, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(74, 10) (74, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(862, 10) (862, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  MN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1030, 10) (1030, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(28, 10) (28, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(912, 10) (912, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(30, 10) (30, 10)
+----------- Model_name --------------:  MS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(734, 10) (734, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(273, 10) (273, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(631, 10) (631, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(362, 10) (362, 10)
+----------- Model_name --------------:  MO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(975, 10) (975, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(63, 10) (63, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(885, 10) (885, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(77, 10) (77, 10)
+----------- Model_name --------------:  MT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1068, 10) (1068, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(5, 10) (5, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(926, 10) (926, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(1, 10) (1, 10)
+----------- Model_name --------------:  NE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1039, 10) (1039, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(16, 10) (16, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(925, 10) (925, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(20, 10) (20, 10)
+----------- Model_name --------------:  NV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(92, 10) (92, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(841, 10) (841, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(99, 10) (99, 10)
+----------- Model_name --------------:  NH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(10, 10) (10, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(6, 10) (6, 10)
+----------- Model_name --------------:  NJ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(908, 10) (908, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(125, 10) (125, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(842, 10) (842, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(125, 10) (125, 10)
+----------- Model_name --------------:  NM
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(29, 10) (29, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(25, 10) (25, 10)
+----------- Model_name --------------:  NY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(880, 10) (880, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(128, 10) (128, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(144, 10) (144, 10)
+----------- Model_name --------------:  NC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(865, 10) (865, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(161, 10) (161, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(763, 10) (763, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(211, 10) (211, 10)
+----------- Model_name --------------:  ND
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1098, 10) (1098, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(20, 10) (20, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(879, 10) (879, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  OH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(953, 10) (953, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(870, 10) (870, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(91, 10) (91, 10)
+----------- Model_name --------------:  OK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(986, 10) (986, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(71, 10) (71, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(873, 10) (873, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(70, 10) (70, 10)
+----------- Model_name --------------:  OR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(17, 10) (17, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(947, 10) (947, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  PA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(987, 10) (987, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(57, 10) (57, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(894, 10) (894, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  RI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(948, 10) (948, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(53, 10) (53, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(949, 10) (949, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(50, 10) (50, 10)
+----------- Model_name --------------:  SC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(822, 10) (822, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(195, 10) (195, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(735, 10) (735, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(248, 10) (248, 10)
+----------- Model_name --------------:  SD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(14, 10) (14, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  TN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(109, 10) (109, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(163, 10) (163, 10)
+----------- Model_name --------------:  TX
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(95, 10) (95, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(816, 10) (816, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(128, 10) (128, 10)
+----------- Model_name --------------:  UT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1071, 10) (1071, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  VT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1029, 10) (1029, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(6, 10) (6, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(7, 10) (7, 10)
+----------- Model_name --------------:  VA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(166, 10) (166, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(791, 10) (791, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(174, 10) (174, 10)
+----------- Model_name --------------:  WA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(41, 10) (41, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(905, 10) (905, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  WV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(26, 10) (26, 10)
+----------- Model_name --------------:  WI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1031, 10) (1031, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(26, 10) (26, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(915, 10) (915, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  WY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1052, 10) (1052, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(7, 10) (7, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(937, 10) (937, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+All state reconstructed data(fair) has been stored in inversion_fair_all_states_reconstruction.pickle
+SubGroup reconstructed data (fair) has been stored in inversion_fair_subgroup_reconstruction.pickle
+Inversion FairDP attack
+----------- Model_name --------------:  AL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(851, 10) (851, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(186, 10) (186, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(736, 10) (736, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(227, 10) (227, 10)
+----------- Model_name --------------:  AK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1101, 10) (1101, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(39, 10) (39, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(832, 10) (832, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  AZ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(49, 10) (49, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(896, 10) (896, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(40, 10) (40, 10)
+----------- Model_name --------------:  AR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(946, 10) (946, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(863, 10) (863, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(105, 10) (105, 10)
+----------- Model_name --------------:  CA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(988, 10) (988, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(75, 10) (75, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(68, 10) (68, 10)
+----------- Model_name --------------:  CO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1027, 10) (1027, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(909, 10) (909, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  CT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(82, 10) (82, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(899, 10) (899, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  DE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(149, 10) (149, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(824, 10) (824, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(179, 10) (179, 10)
+----------- Model_name --------------:  FL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(924, 10) (924, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(102, 10) (102, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(835, 10) (835, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(139, 10) (139, 10)
+----------- Model_name --------------:  GA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(800, 10) (800, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(228, 10) (228, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(676, 10) (676, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(296, 10) (296, 10)
+----------- Model_name --------------:  HI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(94, 10) (94, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(780, 10) (780, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(48, 10) (48, 10)
+----------- Model_name --------------:  ID
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1078, 10) (1078, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(910, 10) (910, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+----------- Model_name --------------:  IL
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(87, 10) (87, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(867, 10) (867, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(107, 10) (107, 10)
+----------- Model_name --------------:  IN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(73, 10) (73, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(883, 10) (883, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(76, 10) (76, 10)
+----------- Model_name --------------:  IA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1026, 10) (1026, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(25, 10) (25, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(19, 10) (19, 10)
+----------- Model_name --------------:  KS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1015, 10) (1015, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(50, 10) (50, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(901, 10) (901, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(34, 10) (34, 10)
+----------- Model_name --------------:  KY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(984, 10) (984, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(59, 10) (59, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(895, 10) (895, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  LA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(214, 10) (214, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(683, 10) (683, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(305, 10) (305, 10)
+----------- Model_name --------------:  ME
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1011, 10) (1011, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(9, 10) (9, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(965, 10) (965, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(15, 10) (15, 10)
+----------- Model_name --------------:  MD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(749, 10) (749, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(249, 10) (249, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(713, 10) (713, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(289, 10) (289, 10)
+----------- Model_name --------------:  MA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(939, 10) (939, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(72, 10) (72, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(933, 10) (933, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(56, 10) (56, 10)
+----------- Model_name --------------:  MI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(966, 10) (966, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(74, 10) (74, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(862, 10) (862, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(98, 10) (98, 10)
+----------- Model_name --------------:  MN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1030, 10) (1030, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(28, 10) (28, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(912, 10) (912, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(30, 10) (30, 10)
+----------- Model_name --------------:  MS
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(734, 10) (734, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(273, 10) (273, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(631, 10) (631, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(362, 10) (362, 10)
+----------- Model_name --------------:  MO
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(975, 10) (975, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(63, 10) (63, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(885, 10) (885, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(77, 10) (77, 10)
+----------- Model_name --------------:  MT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1068, 10) (1068, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(5, 10) (5, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(926, 10) (926, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(1, 10) (1, 10)
+----------- Model_name --------------:  NE
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1039, 10) (1039, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(16, 10) (16, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(925, 10) (925, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(20, 10) (20, 10)
+----------- Model_name --------------:  NV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(968, 10) (968, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(92, 10) (92, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(841, 10) (841, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(99, 10) (99, 10)
+----------- Model_name --------------:  NH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(10, 10) (10, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(6, 10) (6, 10)
+----------- Model_name --------------:  NJ
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(908, 10) (908, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(125, 10) (125, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(842, 10) (842, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(125, 10) (125, 10)
+----------- Model_name --------------:  NM
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(29, 10) (29, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(25, 10) (25, 10)
+----------- Model_name --------------:  NY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(880, 10) (880, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(128, 10) (128, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(848, 10) (848, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(144, 10) (144, 10)
+----------- Model_name --------------:  NC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(865, 10) (865, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(161, 10) (161, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(763, 10) (763, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(211, 10) (211, 10)
+----------- Model_name --------------:  ND
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1098, 10) (1098, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(20, 10) (20, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(879, 10) (879, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  OH
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(953, 10) (953, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(86, 10) (86, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(870, 10) (870, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(91, 10) (91, 10)
+----------- Model_name --------------:  OK
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(986, 10) (986, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(71, 10) (71, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(873, 10) (873, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(70, 10) (70, 10)
+----------- Model_name --------------:  OR
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1028, 10) (1028, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(17, 10) (17, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(947, 10) (947, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  PA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(987, 10) (987, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(57, 10) (57, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(894, 10) (894, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(62, 10) (62, 10)
+----------- Model_name --------------:  RI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(948, 10) (948, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(53, 10) (53, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(949, 10) (949, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(50, 10) (50, 10)
+----------- Model_name --------------:  SC
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(822, 10) (822, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(195, 10) (195, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(735, 10) (735, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(248, 10) (248, 10)
+----------- Model_name --------------:  SD
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(14, 10) (14, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(8, 10) (8, 10)
+----------- Model_name --------------:  TN
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(930, 10) (930, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(109, 10) (109, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(798, 10) (798, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(163, 10) (163, 10)
+----------- Model_name --------------:  TX
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(961, 10) (961, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(95, 10) (95, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(816, 10) (816, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(128, 10) (128, 10)
+----------- Model_name --------------:  UT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1071, 10) (1071, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(8, 10) (8, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(918, 10) (918, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(3, 10) (3, 10)
+----------- Model_name --------------:  VT
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1029, 10) (1029, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(6, 10) (6, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(958, 10) (958, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(7, 10) (7, 10)
+----------- Model_name --------------:  VA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(869, 10) (869, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(166, 10) (166, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(791, 10) (791, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(174, 10) (174, 10)
+----------- Model_name --------------:  WA
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1023, 10) (1023, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(41, 10) (41, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(905, 10) (905, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(31, 10) (31, 10)
+----------- Model_name --------------:  WV
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1020, 10) (1020, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(33, 10) (33, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(921, 10) (921, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(26, 10) (26, 10)
+----------- Model_name --------------:  WI
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1031, 10) (1031, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(26, 10) (26, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(915, 10) (915, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(28, 10) (28, 10)
+----------- Model_name --------------:  WY
+(2000, 10) (2000, 10)
+index1:  8 value1:  1 index2:  9 value2:  1
+(1052, 10) (1052, 10)
+index1:  8 value1:  1 index2:  9 value2:  2
+(7, 10) (7, 10)
+index1:  8 value1:  2 index2:  9 value2:  1
+(937, 10) (937, 10)
+index1:  8 value1:  2 index2:  9 value2:  2
+(4, 10) (4, 10)
+All state reconstructed data(fairDP) has been stored in inversion_fairDP_all_states_reconstruction.pickle
+SubGroup reconstructed data (fairDP) has been stored in inversion_fairDP_subgroup_reconstruction.pickle

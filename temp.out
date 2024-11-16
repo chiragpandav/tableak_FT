@@ -1,0 +1,39 @@
+State Code::  CA
+training sample:: CA.data and len is 9600
+testing sample:: CA.test and len is 2399
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([4000, 10])
+Normal training
+n_batches is 40
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.5802417674030846 0.006724112502929319
+val_accuracy and val_epoch_loss:  0.5798249270529388 0.006570135543325535
+val_accuracy and val_epoch_loss:  0.5798249270529388 0.006438069166666073
+val_accuracy and val_epoch_loss:  0.5806586077532305 0.006313364199669771
+val_accuracy and val_epoch_loss:  0.5869112130054189 0.006189656834047801
+Traceback (most recent call last):
+  File "single_fedavg_inversion_for_client.py", line 194, in <module>
+    main(in_args)
+  File "single_fedavg_inversion_for_client.py", line 171, in main
+    np.save(f'{args.metadata_path}/single_inversion_{args.client}.npy', final_reconstruction.detach().to('cpu').numpy())
+  File "<__array_function__ internals>", line 200, in save
+  File "/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/numpy/lib/npyio.Terminated
+Traceback (most recent call last):
+  File "run_fed_avg_attacks.py", line 245, in <module>
+    parser.add_argument('--name_state', type=str, default='AL', help='State Code')
+  File "run_fed_avg_attacks.py", line 212, in main
+    # ------------ INVERSION EXPERIMENT ------------ #
+  File "run_fed_avg_attacks.py", line 36, in calculate_fed_avg_local_dataset_inversion_performance
+    # train with fedavg and attack
+  File "/home/luser/chirag/tableak_FT/attacks/fed_avg_inversion_attack.py", line 830, in train_and_attack_fed_avg
+    print("---------------------------------------")
+  File "/home/luser/chirag/tableak_FT/attacks/fed_avg_inversion_attack.py", line 395, in fed_avg_attack_parallelized_over_clients
+    final_reconstructions_per_client.append(torch.tensor(np.load(f'{metadata_path}/single_inversion_{client}.npy')).to(device))
+  File "/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'metadata267/single_inversion_0.npy'
+---Tableak---
+e-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'metadata466/single_inversion_0.npy'
+---Tableak---

@@ -1,0 +1,13 @@
+State Code::  CA
+training sample:: CA.data and len is 9600
+testing sample:: CA.test and len is 2399
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([4000, 10])
+Normal training
+n_batches is 40
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.5802417674030846 0.006724112502929319
+val_accuracy and val_epoch_loss:  0.5798249270529388 0.006570135543325535
+val_accuracy and val_epoch_loss:  0.5798249270529388 0.006438069166666073
+val_accuracy and val_epoch_loss:  0.5806586077532305 0.006313364199669771
+val_accuracy and val_epoch_loss:  0.5869112130054189 0.006189656834047801
